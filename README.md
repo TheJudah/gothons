@@ -1,5 +1,5 @@
 # gothons
-Gothons projec
+Gothons project.
 This is a learning exercise based on Zed's Learn Python the Hard Way, written in Python 2.7. 
 
 I appreciate any help you can provide! 
