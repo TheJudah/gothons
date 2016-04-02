@@ -1,0 +1,26 @@
+pg 28
+
+Collaborative work
+
+1. *        is operator      
+   'hello'  is value
+   -88.8    is value
+   -        is operator
+   /        is operator
+   +        is operator
+   5        is value
+  ------------------ 
+2. spam is variable
+  'spam' is string
+  ------------------
+3. string, float, variable
+  ------------------
+4. Expressions are made of values and operators that evaluate to a value.
+  ------------------
+5. Statement assigns value to a variable. expression modifies values.
+  ------------------
+6. bacon = 21
+  ------------------
+7. Both evaluate to spamspamspam.
+  ------------------
+8. 100 already has the built-in value of 100, so cannot be a variable name.

@@ -1,0 +1,16 @@
+21. How would you write a regex that matches the full name of someone whose last name is Nakamoto?
+
+A: [A-Z]\w+ Nakamoto
+
+------------------------------------------
+
+Regex version of strip()
+
+A:
+
+import re
+sentence = '   hairymary had a littlehairy    '
+def stripping(from_this, *args):
+    n = re.compile(r'^[' + str(args) +' ]+|[' + str(args) +' ]+$')
+    return n.sub('', from_this)
+stripping(sentence, 'iahry')

@@ -1,0 +1,68 @@
+1. What is a relative path relative to?
+
+A: The current working directory
+
+----------------------------------------------------------
+2. What does an absolute path start with?
+
+A: the root directory
+
+----------------------------------------------------------
+3. What do the os.getcwd() and os.chdir() functions do?
+
+A: os.getcwd() returns the current working directory as a string,
+   os.chdir() changes your current working directory.
+
+----------------------------------------------------------
+4. What are the . and .. folders?
+
+A: shorthand for "this directory"(.) and "parent folder"(..)
+
+----------------------------------------------------------
+5. In C:\bacon\eggs\spam.txt, which part is the dir name, and which part is the base name?
+
+A: C:\bacon\eggs is the dir name
+   spam.txt is the base name
+
+----------------------------------------------------------
+6. What are the three “mode” arguments that can be passed to the open() function?
+
+A: 'r', read
+   'w', write
+   'a', append
+
+----------------------------------------------------------
+7. What happens if an existing file is opened in write mode?
+
+A: everything in it is overwritten
+
+----------------------------------------------------------
+8. What is the difference between the read() and readlines() methods?
+
+A: read() gets the contents of a file in one large string, readlines() gets the file
+as a list of string values, one string for each line of text
+
+----------------------------------------------------------
+9. What data structure does a shelf value resemble?
+
+A: A dictionary
+
+------------------------------------
+Regex searcher:
+
+import re
+import os
+path = os.getcwd()
+def regexSagashi(directory, regex):
+    for filename in os.listdir(directory):
+        if os.path.isfile(os.path.join(directory, filename)):
+            thatFile = open(os.path.join(directory, filename))
+            fileContents = thatFile.readlines()
+
+            for i in range(len(fileContents)):
+                            line = fileContents[i]
+                            if re.match(regex, line):
+                                print('Found match in ' + str(filename) +
+                                      ' in line: ' + str(i + 1))
+                        
+                        

@@ -1,0 +1,108 @@
+pg 60
+
+Collaborative work
+
+
+1. What are the two values of the Boolean data type? How do you write them?
+True or False, must be capitalized 
+
+2. What are the three Boolean operators?
+and, or, not
+
+3. Write out the truth tables of each Boolean operator 
+
+true and true : true
+true and false : false
+false and true: false
+false and false : false
+
+true or true : true
+true or false : true
+false or true : true
+false or false : false
+
+not true : false
+not false : true
+
+4. What do the following expressions evaluate to?
+
+(5 > 4) and (3 == 5)
+False
+
+not (5 > 4)
+False
+
+(5 > 4) or (3 == 5)
+True
+
+not ((5 > 4) or (3 == 5))
+False
+
+(True and True) and (True == False)
+False
+
+(not False) or (not True)
+True
+
+5. What are the six comparison operators?
+They are:
+== Equal to 
+!= Not equal to 
+< Less than 
+> Greater than 
+<= Less than or equal to 
+>= Greater than or equal to
+
+
+6. What is the difference between the equal to operator and the assignment operator?
+== is equal to, while = is the assingment operator
+
+7. Explain what a condition is and where you would use one.
+a condition is an expression that evaluates to a boolean value
+you might use one to check if you should trigger a part of your program to run.
+for example, if the player is in the room, then make the orcs attack, 
+
+8. Identify the three blocks in this code:
+
+spam = 0  // it's own block
+
+if spam == 10: 
+    print('eggs') //a new block of code
+    if spam > 5:
+        print('bacon') //this indent indicates the third block
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+9. Write code that prints Hello if 1 is stored in spam, 
+prints Howdy if 2 is stored in spam, and prints Greetings! 
+if anything else is stored in spam.
+ 
+ spam = 0
+ if spam == 1: 
+    print('Hello')
+    if spam == 2 :
+        print('Howdy') 
+    else:
+        print('Greetings!')
+    print('Greetings!')
+print(spam)
+
+10. What can you press if your program is stuck in an infinite loop?
+[ctrl] - C
+
+11. What is the difference between break and continue?
+
+break stops the flow and breaks out of the thing, continue skips a step and keeps going.
+
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+
+range 10 goes from 
+
+13. Write a short program that prints the numbers 1 to 10 
+using a for loop. Then write an equivalent program that 
+prints the numbers 1 to 10 using a while loop.
+
+14. If you had a function named bacon() 
+inside a module named spam, how would you call it after importing spam?
